@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/carrusel.js"></script>
+    <script src="js/cargar.js"></script>
+    <title>GameStore</title>
+</head>
+
+<body>
+    <div id="contenedor-loader">
+        <div id="porcentaje">
+        </div>
+        <div class="loader">
+        </div>
+    </div>
+    <header>
+        <div class="menu-hamburguesa">
+            <input type="checkbox" hidden="hidden" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Todos los juegos</a></li>
+                    <li><a href="#">Accion</a></li>
+                    <li><a href="#">Aventura</a></li>
+                    <li><a href="#">Estrategias</a></li>
+                    <li><a href="#">Carreras</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Futbol</a></li>
+                    <li><a href="#">Fantasia</a></li>
+                    <li><a href="#">Shooter</a></li>
+                    <li><a href="#">Cartas</a></li>
+                    <li><a href="#">2 Jugadores</a></li>
+                    <li><a href="#">Puzzle</a></li>
+                    <li><a href="#">Arcade</a></li>
+                    <li><a href="#">Clasicos</a></li>
+                    <li><a href="#">Nuevos</a></li>
+
+                </ul>
+            </nav>
+            <img class="logo" src="img/logo.jpg" alt="">
+        </div>
+
+        <div class="barra-busq">
+            <input type="text" placeholder="Buscar...">
+            <img class="lupa" src="img/lupa.png" alt="lupa">
+        </div>
+        <div class="usuario">
+            <input type="checkbox" hidden="hidden" id="login-toggle">
+            <label for="login-toggle" class="button">
+                <span class="user-img">
+                    <img src="img/profile-picture.avif" alt="">
+                </span>
+            </label>
+            <div class="desplegado">
+                <ul class="ListUser">
+                    <li><a href="" rel="nofollow" class="fa-user">&#9733 Mi Cuenta</a></li>
+                    <li><a href="" rel="nofollow" class="fa-edit">&#9998 Editar Perfil</a></li>
+                    <li><a href="" rel="nofollow" class="LogOut fa-power-off">&#10006 CERRAR SESION</a></li>
+                </ul>
+    </header>
+
+    <h1>Juegos Destacados</h1>
+
+    <div class="destacados">
+        <div class="bomberman">
+            <div class="overlay">
+             <a href="4enlinea.html"><button class="btn-play"> ▶ </button></a>
+            </div>
+            <img src="img/Bomberman/hqdefault (1).webp" alt="">
+            <div class="info">
+                <div class="texto"><p>Megaman vs Bomberman</p></div>
+                <div class="texto"><p>Gratis</p></div>
+            </div>
+        </div>
+        <div class="cards-destacadas">
+            <div class="card">
+                <div class="overlay">
+                    <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                </div>
+                <img src="img/raft-life-cover.webp" alt="">
+                <div class="info">
+                    <div class="texto"><p>Raft Life</p></div>
+                    <div class="texto"><p>$9,99</p></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="overlay">
+                    <button class="btn-play "> ▶ </button>
+                </div>
+                <img src="img/archery-world-tour-cover.webp" alt="">
+                <div class="info">
+                    <div class="texto"><p>Archery World Tour</p></div>
+                    <div class="texto"><p>Comprado</p></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="overlay">
+                    <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                </div>
+                <img src="img/max-vs-gangsters-cover.webp" alt="">
+                <div class="info">
+                    <div class="texto"><p>Max vs Gangsters</p></div>
+                    <div class="texto"><p>$9,99</p></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="overlay">
+                    <button class="btn-play material-symbols-outlined"> shopping_cart</button>
+                </div>
+                <img src="img/mystery-mansion-puzzle-escape-cover.webp" alt="">
+                <div class="info">
+                    <div class="texto"><p>Mystery Mansion</p></div>
+                    <div class="texto"><p>$9,99</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1> Juegos Populares</h1>
+    <div class="container1">
+        <button id="slideLeft" class="btn-crrsl" type="button"> < </button>
+                <div class="lista-cards" id="container">
+
+                    <div class="card">
+                        <img src="img/descarga.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Bloxd.io</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cover-1583231506155.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Basquetball Stars</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cover-1655215853507.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Time Shooter 2</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/coverundefined-1694146412099.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Skill Fite.io</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/coverundefined-1694146448364.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Table Tenis</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/eternal-road-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Eternal Road</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/deck-adventurers-chapter-1-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Deck Adventures</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cover-1584185910210.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Forward Assault Remix</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cover-1586360611838.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Basquet Bros</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="slideRight" class="btn-crrsl" type="button">></button>
+    </div>
+
+    <h1> Juegos Recien Agregados</h1>
+
+    <div class="container2">
+        <button id="slideLeft2" class="btn-crrsl" type="button"> < </button>
+        <div class="cards-vert" id="container2">
+            <div class="card_vertical">
+                <img src="img/vertical/miniblox.jpg" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">MiniBlox</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise" >Comprar</button>
+                </div>
+            </div>
+            <div class="card_vertical">
+                <img src="img/vertical/flig.jpg" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">Flig</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise" >Comprar</button>
+                </div>
+            </div>
+            <div class="card_vertical">
+                <img src="img/vertical/MiniGolfClubPoster.jpg" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">Mini Golf Club</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise">Comprar</button>
+                </div>
+            </div>
+            <div class="card_vertical">
+                <img src="img/vertical/punch-hero.jpg" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">Punch Hero</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise">Comprar</button>
+                </div>
+            </div>
+            <div class="card_vertical">
+                <img src="img/vertical/stumble_guys-5778018.webp" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">Stumble Guys</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise">Comprar</button>
+                </div>
+            </div>
+            <div class="card_vertical">
+                <img src="img/vertical/tap-tap-shots.png" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">Tap Tap Shoots</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise">Comprar</button>
+                </div>
+            </div>
+            <div class="card_vertical">
+                <img src="img/vertical/Vertical-1.png" alt="">
+
+                <div class="card-info">
+                    <p class="titulo">Medieval</p>
+                    <p class="precio">$9,99</p>
+                    <button class="raise">Comprar</button>
+                </div>
+            </div>
+        </div>
+        <button id="slideRight2" class="btn-crrsl" type="button"> > </button>
+    </div>
+
+    <h1> Juegos Recomendados</h1>
+
+    <div class="container1">
+        <button id="slideLeft3" class="btn-crrsl" type="button"> < </button>
+                <div class="lista-cards" id="container3">
+
+                    <div class="card">
+                        <img src="img/cover-1588010858655.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Force Bullets</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/cover-1589881352377.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Game of Thrones</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/QT3ANH5W5FD47HQ4Q4LMGOOTZU.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Genshin Impact</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/wrestle-bros-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Wrestle Bros</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/time-shooter-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Time Shooter</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/stellar-mines-space-miner-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Stellar Mines</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/tennis-masters-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Tenis Master</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/spooky-island-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play"> ▶ </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Spooky Island</p></div>
+                            <div class="texto"><p>Gratis</p></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/sniper-mission-blj-cover.webp" alt="">
+                        <div class="overlay">
+                            <button class="btn-play material-symbols-outlined"> shopping_cart </button>
+                        </div>
+                        <div class="info">
+                            <div class="texto"><p>Sniper Mission</p></div>
+                            <div class="texto"><p>$9,99</p></div>
+                        </div>
+                    </div>
+                </div>
+                <button id="slideRight3" class="btn-crrsl" type="button">></button>
+    </div>
+
+    <footer class="footer">
+        <div class="logo-footer">
+            <img class="img-logo" src="img/logo2.png" alt="Logo">
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-li">
+                <h3>LINKS</h3>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Explorar</a></li>
+                <li><a href="#">Novedades</a></li>
+                <li><a href="#">Gratuitos</a></li>
+                <li><a href="#">Destacados</a></li>
+                <li><a href="#">Premium</a></li>
+            </ul>
+            <ul class="footer-li">
+                <h3>EMPRESA</h3>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Terminos y condiciones</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+            <ul class="footer-li">
+                <h3>ASISTENCIA</h3>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Acuerdo de subscription</a></li>
+                <li><a href="#">Cancelar subscription</a></li>
+            </ul>
+            <ul class="footer-li">
+                <h3>CONTACTO</h3>
+                <li><a href="#">+1141410931</a></li>
+                <li><a href="#">Av Epaña 1902</a></li>
+            </ul>
+        </nav>
+        <div class="social-network">
+            <a href="https://www.facebook.com" target="_blank"><img class="img-footer" src="img/facebook.png"
+                    alt="Facebook"></a>
+            <a href="https://twitter.com/" target="_blank"><img class="img-footer" src="img/twitter.png"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="img-footer" src="img/instagram.png"
+                    alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
